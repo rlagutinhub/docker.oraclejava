@@ -1,4 +1,4 @@
-# noVNC Display Container + Docker services internal url
+# Oracle Java on Docker
 ```
 ```
 This repository contains a sample Docker configuration to facilitate installation and environment setup for DevOps users. This project includes a Dockerfile for Server JRE 8 based on Oracle Linux with include <b>package rootfiles</b> (for enable root bash profile).
