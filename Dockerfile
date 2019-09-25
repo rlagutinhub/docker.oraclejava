@@ -1,7 +1,3 @@
-# LICENSE UPL 1.0
-#
-# Copyright (c) 2015 Oracle and/or its affiliates. All rights reserved.
-#
 FROM oraclelinux:7-slim
 
 MAINTAINER Aurelio Garcia-Ribeyro <aurelio.garciaribeyro@oracle.com>
@@ -11,7 +7,7 @@ ENV JAVA_PKG=server-jre-8u*-linux-x64.tar.gz \
 
 ADD $JAVA_PKG /usr/java/
 
-RUN yum -y install tar gzip && \
+RUN yum -y install rootfiles tar gzip && \
     rm -rf /var/cache/yum/* && \
     export JAVA_DIR=$(ls -1 -d /usr/java/*) && \
     ln -s $JAVA_DIR /usr/java/latest && \
